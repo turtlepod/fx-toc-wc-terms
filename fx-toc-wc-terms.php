@@ -147,9 +147,6 @@ function fx_toc_wc_terms_build_toc( $content, $args, $term ) {
 	$close = '';
 	$out = ''; //output
 
-	/* Open sesame */
-	$open = '<div class="fx-toc fx-toc-id-' . get_the_ID() . '">';
-
 	/* If the Table Of Content title is set, display */
 	if ( $title ){
 		$open .= '<' . $title_tag . ' class="fx-toc-title">' . $title . '</' . $title_tag . '>';
@@ -228,9 +225,6 @@ function fx_toc_wc_terms_build_toc( $content, $args, $term ) {
 
 	/* Get closing level tags, close the list */
 	$close .= fx_toc_sc_close_level( 0, $cur_level, $lowest_heading, $list );
-
-	/* Close sesame */
-	$close .= "</div>\n";
 
 	/* Check if heading exist. */
 	if ( $heading_out ) {
