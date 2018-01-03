@@ -1,6 +1,9 @@
 f(x) TOC WC Terms.
 ====================
 
+## 1.0.2 - 03 Jan 2017
+* Default TOC title tag to "p".
+
 ## 1.0.1 - 30 Dec 2017
 * Compatibility with Category Collapser for WooCommerce plugin.
 

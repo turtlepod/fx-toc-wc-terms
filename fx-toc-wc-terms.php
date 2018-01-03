@@ -3,7 +3,7 @@
  * Plugin Name: f(x) TOC WC Terms
  * Plugin URI: http://genbumedia.com/plugins/fx-email-log/
  * Description: TOC Support for WC Terms, use [toc-cat] to display.
- * Version: 1.0.0
+ * Version: 1.0.2
  * Author: David Chandra Purnama
  * Author URI: http://shellcreeper.com/
  * License: GPLv2 or later
@@ -64,11 +64,11 @@ function fx_toc_wc_terms_toc_cat_shortcode( $atts ) {
 	}
 
 	// Default shortcode args.
-	$default_args = apply_filters( 'fx_toc_default_args', array(
+	$default_args = apply_filters( 'fx_toc_wc_terms_default_args', array(
 		'depth'          => 6,
 		'list'           => 'ul',
 		'title'          => __( 'Table of contents', 'fx-toc' ),
-		'title_tag'      => 'h2',
+		'title_tag'      => 'p',
 	) );
 	$attr = shortcode_atts( $default_args, $atts );
 
